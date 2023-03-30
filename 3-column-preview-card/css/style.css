@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    align-items: center;
+    background-color: hsl(0, 0%, 95%);
+    display: flex;
+    flex-direction: column;
+    width: 1440px;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    height: 500px;
+    width: 900px;
+}
+
+.first-column {
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: hsl(31, 77%, 52%);
+}
+
+.second-column {
+    height: 100%;
+    background-color: hsl(184, 100%, 22%);
+}
+
+.third-column {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 100%;
+    background-color: hsl(179, 100%, 13%);
+}
+
+
+.title {
+    font-size: 35px;
+    margin-left: 35px;
+    margin-top: 50px;
+    color: hsl(0, 0%, 95%);
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display';
+}
+
+
+svg {
+    margin-left: 35px;
+    margin-top: 50px;
+}
+
+article > p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca';
+    font-size: 16px;
+    line-height: 25px;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 30px;
+}
+
+article > button {
+    cursor: pointer;
+    border-style: none;
+    font-family: 'Lexend Deca';
+    height: 50px;
+    width: 150px;
+    border-radius: 30px;
+    background-color: hsl(0, 0%, 95%);
+    margin-left: 35px;
+    margin-top: 60px;
+}
+
+.first-button {
+    color: hsl(31, 77%, 52%);
+}
+
+.second-button {
+    color: hsl(184, 100%, 22%);
+}
+
+.third-button {
+    color:hsl(179, 100%, 13%);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 450px) {
+    body {
+        margin: 0;
+        width: 350px;
+        height: 700px;
+    }
+    main {
+        display: block;
+        align-items: center;
+        align-self: center;
+        justify-content: center;
+        height: 630px;
+        width: 350px;
+        margin: 0;
+    }
+    .first-column {
+        height: 500px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+    .second-column{
+        height: 500px;
+    }
+    .third-column {
+        height: 500px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0px;
+    }
+    footer {
+        display: none;
+    }
+}
